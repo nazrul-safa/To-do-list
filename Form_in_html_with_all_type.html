@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                  <div class="alert alert-success">
+                      <h5 class="text-center">
+                          <b>Assignment 4 HTML input type</b>
+                      </h5>
+                  </div>
+                  <form action="submit.html">
+                      <div class="panel panel-primary">
+                          <div class="panel-heading">
+                              <h5 class="text-center">FORM</h5>
+                          </div>
+                          <div class="panel-body">
+                              <div class="row">
+                                  <div class="col-md-12 form-group">
+                                      <div class="col-md-6">
+                                          <label for="name">Name</label>
+                                          <input type="text" name="name" autofocus autocomplete="off" class="form-control">
+                                      </div>
+                                  
+                                      <div class="col-md-6">
+                                          <label for="email">Email</label>
+                                          <input type="email" name="email" multiple id="email" class="form-control" required>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <label for="age">Age</label>
+                                          <input type="number" name="age" id="age" class="form-control">
+                                      </div>
+                                      <div class="col-md-6">
+                                          <label for="password">Password</label>
+                                          <input type="password" name="password" minlength="6" id="password" class="form-control">
+                                      </div>
+                                      <div class="col-md-6">
+                                          <label for="date">date of Birth</label>
+                                          <input type="date" name="date" id="date" class="form-control">
+                                      </div>
+                                      <div class="col-md-6">
+                                          <label for="time">Shedule Time</label>
+                                          <input type="time" name="time" id="time" class="form-control">
+                                      </div>
+                                      <div class="col-md-6">
+                                          <label for="datetime">Date & Time</label>
+                                          <input type="dateTime-local" name="dateTime" id="dateTime" class="form-control">
+                                      </div>
+                                      <div class="col-md-6">
+                                          <label for="week">Week</label>
+                                          <input type="week" name="week" id="week" class="form-control">
+                                      </div>
+                                      <div class="col-md-6">
+                                          <label for="month">Month</label>
+                                          <input type="month" name="month" id="month" class="form-control">
+                                      </div>
+                                      <div class="col-md-6">
+                                          <label for="url">Website</label>
+                                          <input type="url" name="url" id="url" class="form-control">
+                                      </div>
+                                      <div class="col-md-6">
+                                          <label for="color">Color</label>
+                                          <input type="color" name="color" id="color" class="form-control">
+                                      </div>
+                                      <div class="col-md-6">
+                                          <label for="range">Range</label>
+                                          <input type="range" name="range" id="range" class="form-control">
+                                      </div>
+                                      <div class="col-md-12">
+                                          <label for="address">Address</label>
+                                         <textarea name="address" id="" cols="30" rows="10" class="form-control"></textarea>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="division">Division</label>
+                                        <select name="division" id="division" class="form-control">
+                                            <option value="0">Select One</option>
+                                            <option value="0">Dhaka</option>
+                                            <option value="0">Cumilla</option>
+                                            <option value="0">Rajshahi</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="gender">Gender</label>
+                                        <div class="">
+                                            <label for="male" class="radio-inline">
+                                                <input type="radio" id="male" name="gender"> Male
+                                            </label>
+                                            <label for="female" class="radio-inline">
+                                                <input type="radio" id="female" name="gender"> Female
+                                            </label>
+                                            <label for="other" class="radio-inline">
+                                                <input type="radio" id="other" name="gender"> Other
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="col-md-6">
+                                            <label for="skills">Skills</label>
+                                            <div class="">
+                                                <label for="php" class="checkbox-inline">
+                                                    <input type="checkbox" id="php" name="php"> PHP
+                                                </label>
+                                                <label for="python" class="checkbox-inline">
+                                                    <input type="checkbox" id="python" name="python"> Python
+                                                </label>
+                                                <label for="java" class="checkbox-inline">
+                                                    <input type="checkbox" id="java" name="java"> Java
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="file">File</label>
+                                        <input type="file" id="file" class="form-control  ">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="image" src="img.jpg" height="60" width="60" style="margin-top: 5px;">
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="panel-footer">
+                              <div class="row">
+                                  <button class="btn btn-warning pull-left" formnovalidate style="margin-left: 4px">Save as draft</button>
+                                  <button class="btn btn-success pull-right" formnovalidate style="margin-left: 4px" type="submit">Submit</button>
+                                  <button class="btn btn-danger pull-right" style="margin-right: 4px" type="reset">Reset</button>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>
